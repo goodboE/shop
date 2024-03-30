@@ -27,7 +27,7 @@ public class ItemController {
     @GetMapping("/admin/item")
     public String addItemForm(Model model) {
         model.addAttribute("itemForm", new ItemForm());
-        return "/admin/item";
+        return "admin/item";
     }
 
     // 상품 등록

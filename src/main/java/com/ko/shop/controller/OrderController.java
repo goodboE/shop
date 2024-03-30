@@ -84,7 +84,7 @@ public class OrderController {
     public String getOrderItems(Model model) {
         List<OrderItem> orderItems = orderItemService.findAll();
         model.addAttribute("orderItems", orderItems);
-        return "/orders";
+        return "orders";
     }
 
 }
