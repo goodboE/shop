@@ -45,7 +45,7 @@ tasks.named('test') {
 }
 
 bootJar{
-	destinationDirectory = file("/Users/hyeonjin/ko") //gradle build 시 jar 파일이 생성되는 파일명 및 위치를 설정한다.
+	destinationDirectory = file("./target")
 	archivesBaseName = 'shop'   //프로젝트이름
 	archiveFileName = 'shop.jar' //jar파일명
 	archiveVersion = "0.0.1"
