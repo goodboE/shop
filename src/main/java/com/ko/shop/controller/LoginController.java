@@ -41,7 +41,7 @@ public class LoginController {
         if (loginUser == null) {
             log.info("null");
             bindingResult.reject("loginFail..", "아이디 또는 패스워드가 맞지 않습니다.");
-            return "/user/signInForm";
+            return "user/signInForm";
         }
 
         HttpSession session = request.getSession();
