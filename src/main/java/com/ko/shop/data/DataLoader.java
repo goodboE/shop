@@ -24,7 +24,7 @@ public class DataLoader {
     private final UserRepository userRepository;
     private final ItemRepository itemRepository;
 
-    @PostConstruct
+    // @PostConstruct
     public void init() {
         User admin = new User("iwantjoin", "cjons", "서울특별시 용산구 한강대로 366");
         User testUser = new User("test", "123", "인천광역시 부평구 부개동");
